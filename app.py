@@ -40,6 +40,7 @@ def refresh():
     login_url = "www.examples.org/refresh"
     login_data = {'refresh':'<refresh>'}
     login_headers = {}
+    refresh_token_name = 'refresh'
     token_params = {'access':"access"}
     # ~~~~~~~~~~~~~~~~~~~~~~~~~~ END SECTION ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -47,6 +48,7 @@ def refresh():
         resp['login_url'] = login_url
         resp['login_data'] = login_data
         resp['login_headers'] = login_headers
+        resp['refresh_token_name'] = refresh_token_name
         resp['token_parameters'] = token_params
         return resp
     else:
